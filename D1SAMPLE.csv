@@ -1,102 +1,102 @@
-,pdf_type,confidence,total_pages,text_pages,scanned_pages,mixed_pages,ocr_pages,ocr_enabled,processing_time_sec,extraction_engine,requires_ocr,requires_docling,decision_reason
-0,UNKNOWN,0,0,0,0,0,0,FALSE,0.0530301,,FALSE,FALSE,
-1,TEXT,62.26541555,373,369,1,3,0,FALSE,14.5609669,PyMuPDF,FALSE,FALSE,369 of 373 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-2,UNKNOWN,0,0,0,0,0,0,FALSE,0.0396756,,FALSE,FALSE,
-3,MIXED,56.37777778,450,378,3,69,0,TRUE,7.7418217,PyMuPDF,FALSE,FALSE,378 of 450 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-4,UNKNOWN,0,0,0,0,0,0,FALSE,0.0364687,,FALSE,FALSE,
-5,TEXT,64.18981481,216,208,4,4,0,FALSE,10.350748,PyMuPDF,FALSE,FALSE,208 of 216 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-6,UNKNOWN,0,0,0,0,0,0,FALSE,0.0650643,,FALSE,FALSE,
-7,TEXT,64.0625,256,251,0,2,3,FALSE,10.8028073,PyMuPDF,FALSE,FALSE,251 of 256 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-8,TEXT,68.43137255,153,149,1,2,1,FALSE,7.2851417,PyMuPDF,FALSE,FALSE,149 of 153 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-9,UNKNOWN,0,0,0,0,0,0,FALSE,0.0311662,,FALSE,FALSE,
-10,TEXT,59.3,550,535,1,14,0,FALSE,6.5896381,PyMuPDF,FALSE,FALSE,535 of 550 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-11,TEXT,59.59951456,412,401,1,10,0,FALSE,6.6709864,PyMuPDF,FALSE,FALSE,401 of 412 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-12,UNKNOWN,0,0,0,0,0,0,FALSE,0.0282029,,FALSE,FALSE,
-13,MIXED,72.98701299,154,133,1,20,0,TRUE,4.1852861,PyMuPDF,FALSE,FALSE,133 of 154 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-14,MIXED,53.06213018,338,300,8,29,1,TRUE,3.2221989,PyMuPDF,FALSE,FALSE,300 of 338 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-15,TEXT,60.69321534,339,328,7,4,0,FALSE,5.1143165,PyMuPDF,FALSE,FALSE,328 of 339 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-16,TEXT,58.14,250,237,1,12,0,FALSE,5.65912,PyMuPDF,FALSE,FALSE,237 of 250 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-17,TEXT,65.6443299,194,183,2,9,0,FALSE,4.2514796,PyMuPDF,FALSE,FALSE,183 of 194 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-18,UNKNOWN,0,0,0,0,0,0,FALSE,0.0209119,,FALSE,FALSE,
-19,TEXT,60.74427481,262,256,2,4,0,FALSE,8.6274742,PyMuPDF,FALSE,FALSE,256 of 262 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-20,TEXT,59.07590759,303,292,1,6,4,FALSE,8.8845065,PyMuPDF,FALSE,FALSE,292 of 303 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-21,TEXT,69.5049505,202,194,1,7,0,FALSE,16.3302228,PyMuPDF,FALSE,FALSE,194 of 202 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-22,TEXT,60.49095607,387,371,0,15,1,FALSE,11.6673344,PyMuPDF,FALSE,FALSE,371 of 387 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-23,TEXT,59.24382716,324,321,1,2,0,FALSE,3.9324778,PyMuPDF,FALSE,FALSE,321 of 324 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-24,TEXT,61.15056818,704,672,3,27,2,FALSE,10.3216252,PyMuPDF,FALSE,FALSE,672 of 704 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-25,TEXT,64.67821782,202,187,6,9,0,FALSE,7.3135348,PyMuPDF,FALSE,FALSE,187 of 202 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-26,UNKNOWN,0,0,0,0,0,0,FALSE,0.0391472,,FALSE,FALSE,
-27,TEXT,63.81188119,202,196,1,5,0,FALSE,6.995197,PyMuPDF,FALSE,FALSE,196 of 202 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-28,MIXED,62.7184466,206,151,2,53,0,TRUE,10.5024081,PyMuPDF,FALSE,FALSE,151 of 206 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-29,TEXT,64.93644068,236,226,1,9,0,FALSE,6.3461507,PyMuPDF,FALSE,FALSE,226 of 236 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-30,TEXT,56.69411765,425,400,14,6,5,FALSE,14.8927261,PyMuPDF,FALSE,FALSE,400 of 425 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-31,TEXT,65.17964072,167,166,1,0,0,FALSE,3.3448909,PyMuPDF,FALSE,FALSE,166 of 167 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-32,TEXT,65.50884956,452,438,8,6,0,FALSE,7.3082684,PyMuPDF,FALSE,FALSE,438 of 452 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-33,TEXT,59.697733,397,359,4,32,2,FALSE,5.0927932,PyMuPDF,FALSE,FALSE,359 of 397 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-34,TEXT,61.23176661,617,609,1,5,2,FALSE,10.8842198,PyMuPDF,FALSE,FALSE,609 of 617 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-35,TEXT,75.30257186,661,629,11,4,17,FALSE,22.2204864,PyMuPDF,FALSE,FALSE,629 of 661 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-36,TEXT,56.27710843,415,393,4,18,0,FALSE,6.2318238,PyMuPDF,FALSE,FALSE,393 of 415 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-37,UNKNOWN,0,0,0,0,0,0,FALSE,0.0185406,,FALSE,FALSE,
-38,TEXT,64.78873239,568,516,18,34,0,FALSE,11.5067926,PyMuPDF,FALSE,FALSE,516 of 568 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-39,TEXT,65.17241379,145,143,0,2,0,FALSE,2.4081222,PyMuPDF,FALSE,FALSE,143 of 145 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-40,TEXT,61.99386503,163,152,4,7,0,FALSE,3.4248484,PyMuPDF,FALSE,FALSE,152 of 163 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-41,TEXT,79.15816327,196,189,3,4,0,FALSE,7.2390858,PyMuPDF,FALSE,FALSE,189 of 196 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-42,TEXT,63.984375,192,180,2,10,0,FALSE,8.8319303,PyMuPDF,FALSE,FALSE,180 of 192 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-43,MIXED,60.41587902,529,469,11,49,0,TRUE,7.165797,PyMuPDF,FALSE,FALSE,469 of 529 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-44,UNKNOWN,0,0,0,0,0,0,FALSE,0.0635628,,FALSE,FALSE,
-45,TEXT,60.62162162,370,366,2,2,0,FALSE,3.7067772,PyMuPDF,FALSE,FALSE,366 of 370 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-46,TEXT,59.66292135,267,250,4,13,0,FALSE,4.0762049,PyMuPDF,FALSE,FALSE,250 of 267 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-47,TEXT,60.74349442,269,243,8,16,2,FALSE,16.4117886,PyMuPDF,FALSE,FALSE,243 of 269 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-48,MIXED,49.70679012,648,581,13,53,1,TRUE,14.8536933,PyMuPDF,FALSE,FALSE,581 of 648 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-49,TEXT,63.67158672,271,267,4,0,0,FALSE,3.1722364,PyMuPDF,FALSE,FALSE,267 of 271 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-,pdf_type,confidence,total_pages,text_pages,scanned_pages,mixed_pages,ocr_pages,ocr_enabled,processing_time_sec,extraction_engine,requires_ocr,requires_docling,decision_reason
-0,UNKNOWN,0,0,0,0,0,0,FALSE,0.0575515,,FALSE,FALSE,
-1,MIXED,55.88825215,349,307,11,31,0,TRUE,5.3985446,PyMuPDF,FALSE,FALSE,307 of 349 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-2,TEXT,62.28915663,249,245,1,3,0,FALSE,4.9561854,PyMuPDF,FALSE,FALSE,245 of 249 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-3,UNKNOWN,0,0,0,0,0,0,FALSE,0.0271574,,FALSE,FALSE,
-4,TEXT,58.84469697,264,258,4,2,0,FALSE,3.1241173,PyMuPDF,FALSE,FALSE,258 of 264 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-5,TEXT,67.85031847,314,302,4,8,0,FALSE,5.6110321,PyMuPDF,FALSE,FALSE,302 of 314 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-6,TEXT,57.32258065,310,300,2,8,0,FALSE,5.077975,PyMuPDF,FALSE,FALSE,300 of 310 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-7,MIXED,56.60818713,684,609,8,67,0,TRUE,10.8771556,PyMuPDF,FALSE,FALSE,609 of 684 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-8,TEXT,60.18852459,610,597,2,10,1,FALSE,8.72844,PyMuPDF,FALSE,FALSE,597 of 610 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-9,TEXT,60.42735043,585,571,2,12,0,FALSE,8.4638933,PyMuPDF,FALSE,FALSE,571 of 585 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-10,TEXT,60.01481481,675,659,1,15,0,FALSE,10.1342292,PyMuPDF,FALSE,FALSE,659 of 675 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-11,MIXED,56.55956113,638,571,13,54,0,TRUE,8.5225852,PyMuPDF,FALSE,FALSE,571 of 638 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-12,TEXT,62.77631579,380,367,2,11,0,FALSE,5.5825808,PyMuPDF,FALSE,FALSE,367 of 380 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-13,TEXT,67.13768116,138,126,2,10,0,FALSE,6.0108355,PyMuPDF,FALSE,FALSE,126 of 138 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-14,UNKNOWN,0,0,0,0,0,0,FALSE,0.0399157,,FALSE,FALSE,
-15,TEXT,61.27659574,141,136,1,2,2,FALSE,3.4046932,PyMuPDF,FALSE,FALSE,136 of 141 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-16,TEXT,69.63235294,340,331,2,7,0,FALSE,7.5257305,PyMuPDF,FALSE,FALSE,331 of 340 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-17,TEXT,69.73782772,267,261,2,4,0,FALSE,5.7971047,PyMuPDF,FALSE,FALSE,261 of 267 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-18,TEXT,61.18181818,275,256,2,17,0,FALSE,3.1414806,PyMuPDF,FALSE,FALSE,256 of 275 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-19,MIXED,65.79096045,177,159,1,17,0,TRUE,8.2325568,PyMuPDF,FALSE,FALSE,159 of 177 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-20,UNKNOWN,0,0,0,0,0,0,FALSE,0.0431557,,FALSE,FALSE,
-21,MIXED,63.71794872,273,218,5,50,0,TRUE,4.0399737,PyMuPDF,FALSE,FALSE,218 of 273 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-22,TEXT,62.00892857,336,315,5,16,0,FALSE,4.4930602,PyMuPDF,FALSE,FALSE,315 of 336 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-23,TEXT,69.77031802,283,274,2,7,0,FALSE,21.5862778,PyMuPDF,FALSE,FALSE,274 of 283 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-24,UNKNOWN,0,0,0,0,0,0,FALSE,0.0652069,,FALSE,FALSE,
-25,TEXT,63.72302158,278,257,3,18,0,FALSE,19.9910723,PyMuPDF,FALSE,FALSE,257 of 278 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-26,UNKNOWN,0,0,0,0,0,0,FALSE,0.0522932,,FALSE,FALSE,
-27,MIXED,63.19767442,86,71,2,12,1,TRUE,4.7879241,PyMuPDF,FALSE,FALSE,71 of 86 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-28,TEXT,57.67010309,485,456,9,20,0,FALSE,12.3866145,PyMuPDF,FALSE,FALSE,456 of 485 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-29,TEXT,60.22563177,554,527,9,17,1,FALSE,8.6761495,PyMuPDF,FALSE,FALSE,527 of 554 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-30,UNKNOWN,0,0,0,0,0,0,FALSE,0.0422386,,FALSE,FALSE,
-31,UNKNOWN,0,0,0,0,0,0,FALSE,0.0551838,,FALSE,FALSE,
-32,UNKNOWN,0,0,0,0,0,0,FALSE,0.0376019,,FALSE,FALSE,
-33,UNKNOWN,0,0,0,0,0,0,FALSE,0.0851921,,FALSE,FALSE,
-34,UNKNOWN,0,0,0,0,0,0,FALSE,0.0348199,,FALSE,FALSE,
-35,TEXT,68.43091335,427,417,10,0,0,FALSE,7.8684274,PyMuPDF,FALSE,FALSE,417 of 427 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-36,TEXT,56.66276347,427,401,12,12,2,FALSE,8.9721802,PyMuPDF,FALSE,FALSE,401 of 427 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-37,TEXT,57.42268041,485,449,5,31,0,FALSE,5.020462,PyMuPDF,FALSE,FALSE,449 of 485 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-38,TEXT,66.46067416,178,175,1,2,0,FALSE,4.1745637,PyMuPDF,FALSE,FALSE,175 of 178 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-39,UNKNOWN,0,0,0,0,0,0,FALSE,0.0219821,,FALSE,FALSE,
-40,TEXT,67.00775194,645,632,9,3,1,FALSE,25.4122872,PyMuPDF,FALSE,FALSE,632 of 645 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-41,TEXT,64.94974874,199,194,0,4,1,FALSE,8.8434614,PyMuPDF,FALSE,FALSE,194 of 199 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-42,TEXT,61.72289157,415,395,1,10,9,FALSE,13.4630367,PyMuPDF,FALSE,FALSE,395 of 415 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-43,TEXT,59.35483871,279,270,6,3,0,FALSE,5.1273477,PyMuPDF,FALSE,FALSE,270 of 279 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-44,TEXT,69.39306358,346,336,1,9,0,FALSE,4.6938135,PyMuPDF,FALSE,FALSE,336 of 346 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-45,TEXT,59.94413408,358,339,10,8,1,FALSE,5.5350902,PyMuPDF,FALSE,FALSE,339 of 358 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-46,TEXT,61.59388646,458,445,2,11,0,FALSE,12.7721864,PyMuPDF,FALSE,FALSE,445 of 458 pages contain a text layer. OCR is not required. Use direct text and table extraction.
-47,UNKNOWN,0,0,0,0,0,0,FALSE,0.0270451,,FALSE,FALSE,
-48,MIXED,64.5990566,212,186,2,24,0,TRUE,22.2627388,PyMuPDF,FALSE,FALSE,186 of 212 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
-49,TEXT,59.07407407,243,241,1,1,0,FALSE,2.4071655,PyMuPDF,FALSE,FALSE,241 of 243 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+pdf_type,confidence,total_pages,text_pages,scanned_pages,mixed_pages,ocr_pages,ocr_enabled,processing_time_sec,extraction_engine,requires_ocr,requires_docling,decision_reason
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0530301,,FALSE,FALSE,
+TEXT,62.26541555,373,369,1,3,0,FALSE,14.5609669,PyMuPDF,FALSE,FALSE,369 of 373 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0396756,,FALSE,FALSE,
+MIXED,56.37777778,450,378,3,69,0,TRUE,7.7418217,PyMuPDF,FALSE,FALSE,378 of 450 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0364687,,FALSE,FALSE,
+TEXT,64.18981481,216,208,4,4,0,FALSE,10.350748,PyMuPDF,FALSE,FALSE,208 of 216 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0650643,,FALSE,FALSE,
+TEXT,64.0625,256,251,0,2,3,FALSE,10.8028073,PyMuPDF,FALSE,FALSE,251 of 256 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,68.43137255,153,149,1,2,1,FALSE,7.2851417,PyMuPDF,FALSE,FALSE,149 of 153 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0311662,,FALSE,FALSE,
+TEXT,59.3,550,535,1,14,0,FALSE,6.5896381,PyMuPDF,FALSE,FALSE,535 of 550 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,59.59951456,412,401,1,10,0,FALSE,6.6709864,PyMuPDF,FALSE,FALSE,401 of 412 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0282029,,FALSE,FALSE,
+MIXED,72.98701299,154,133,1,20,0,TRUE,4.1852861,PyMuPDF,FALSE,FALSE,133 of 154 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+MIXED,53.06213018,338,300,8,29,1,TRUE,3.2221989,PyMuPDF,FALSE,FALSE,300 of 338 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+TEXT,60.69321534,339,328,7,4,0,FALSE,5.1143165,PyMuPDF,FALSE,FALSE,328 of 339 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,58.14,250,237,1,12,0,FALSE,5.65912,PyMuPDF,FALSE,FALSE,237 of 250 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,65.6443299,194,183,2,9,0,FALSE,4.2514796,PyMuPDF,FALSE,FALSE,183 of 194 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0209119,,FALSE,FALSE,
+TEXT,60.74427481,262,256,2,4,0,FALSE,8.6274742,PyMuPDF,FALSE,FALSE,256 of 262 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,59.07590759,303,292,1,6,4,FALSE,8.8845065,PyMuPDF,FALSE,FALSE,292 of 303 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,69.5049505,202,194,1,7,0,FALSE,16.3302228,PyMuPDF,FALSE,FALSE,194 of 202 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,60.49095607,387,371,0,15,1,FALSE,11.6673344,PyMuPDF,FALSE,FALSE,371 of 387 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,59.24382716,324,321,1,2,0,FALSE,3.9324778,PyMuPDF,FALSE,FALSE,321 of 324 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,61.15056818,704,672,3,27,2,FALSE,10.3216252,PyMuPDF,FALSE,FALSE,672 of 704 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,64.67821782,202,187,6,9,0,FALSE,7.3135348,PyMuPDF,FALSE,FALSE,187 of 202 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0391472,,FALSE,FALSE,
+TEXT,63.81188119,202,196,1,5,0,FALSE,6.995197,PyMuPDF,FALSE,FALSE,196 of 202 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+MIXED,62.7184466,206,151,2,53,0,TRUE,10.5024081,PyMuPDF,FALSE,FALSE,151 of 206 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+TEXT,64.93644068,236,226,1,9,0,FALSE,6.3461507,PyMuPDF,FALSE,FALSE,226 of 236 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,56.69411765,425,400,14,6,5,FALSE,14.8927261,PyMuPDF,FALSE,FALSE,400 of 425 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,65.17964072,167,166,1,0,0,FALSE,3.3448909,PyMuPDF,FALSE,FALSE,166 of 167 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,65.50884956,452,438,8,6,0,FALSE,7.3082684,PyMuPDF,FALSE,FALSE,438 of 452 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,59.697733,397,359,4,32,2,FALSE,5.0927932,PyMuPDF,FALSE,FALSE,359 of 397 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,61.23176661,617,609,1,5,2,FALSE,10.8842198,PyMuPDF,FALSE,FALSE,609 of 617 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,75.30257186,661,629,11,4,17,FALSE,22.2204864,PyMuPDF,FALSE,FALSE,629 of 661 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,56.27710843,415,393,4,18,0,FALSE,6.2318238,PyMuPDF,FALSE,FALSE,393 of 415 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0185406,,FALSE,FALSE,
+TEXT,64.78873239,568,516,18,34,0,FALSE,11.5067926,PyMuPDF,FALSE,FALSE,516 of 568 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,65.17241379,145,143,0,2,0,FALSE,2.4081222,PyMuPDF,FALSE,FALSE,143 of 145 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,61.99386503,163,152,4,7,0,FALSE,3.4248484,PyMuPDF,FALSE,FALSE,152 of 163 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,79.15816327,196,189,3,4,0,FALSE,7.2390858,PyMuPDF,FALSE,FALSE,189 of 196 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,63.984375,192,180,2,10,0,FALSE,8.8319303,PyMuPDF,FALSE,FALSE,180 of 192 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+MIXED,60.41587902,529,469,11,49,0,TRUE,7.165797,PyMuPDF,FALSE,FALSE,469 of 529 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0635628,,FALSE,FALSE,
+TEXT,60.62162162,370,366,2,2,0,FALSE,3.7067772,PyMuPDF,FALSE,FALSE,366 of 370 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,59.66292135,267,250,4,13,0,FALSE,4.0762049,PyMuPDF,FALSE,FALSE,250 of 267 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,60.74349442,269,243,8,16,2,FALSE,16.4117886,PyMuPDF,FALSE,FALSE,243 of 269 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+MIXED,49.70679012,648,581,13,53,1,TRUE,14.8536933,PyMuPDF,FALSE,FALSE,581 of 648 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+TEXT,63.67158672,271,267,4,0,0,FALSE,3.1722364,PyMuPDF,FALSE,FALSE,267 of 271 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+pdf_type,confidence,total_pages,text_pages,scanned_pages,mixed_pages,ocr_pages,ocr_enabled,processing_time_sec,extraction_engine,requires_ocr,requires_docling,decision_reason
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0575515,,FALSE,FALSE,
+MIXED,55.88825215,349,307,11,31,0,TRUE,5.3985446,PyMuPDF,FALSE,FALSE,307 of 349 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+TEXT,62.28915663,249,245,1,3,0,FALSE,4.9561854,PyMuPDF,FALSE,FALSE,245 of 249 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0271574,,FALSE,FALSE,
+TEXT,58.84469697,264,258,4,2,0,FALSE,3.1241173,PyMuPDF,FALSE,FALSE,258 of 264 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,67.85031847,314,302,4,8,0,FALSE,5.6110321,PyMuPDF,FALSE,FALSE,302 of 314 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,57.32258065,310,300,2,8,0,FALSE,5.077975,PyMuPDF,FALSE,FALSE,300 of 310 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+MIXED,56.60818713,684,609,8,67,0,TRUE,10.8771556,PyMuPDF,FALSE,FALSE,609 of 684 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+TEXT,60.18852459,610,597,2,10,1,FALSE,8.72844,PyMuPDF,FALSE,FALSE,597 of 610 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,60.42735043,585,571,2,12,0,FALSE,8.4638933,PyMuPDF,FALSE,FALSE,571 of 585 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,60.01481481,675,659,1,15,0,FALSE,10.1342292,PyMuPDF,FALSE,FALSE,659 of 675 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+MIXED,56.55956113,638,571,13,54,0,TRUE,8.5225852,PyMuPDF,FALSE,FALSE,571 of 638 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+TEXT,62.77631579,380,367,2,11,0,FALSE,5.5825808,PyMuPDF,FALSE,FALSE,367 of 380 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,67.13768116,138,126,2,10,0,FALSE,6.0108355,PyMuPDF,FALSE,FALSE,126 of 138 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0399157,,FALSE,FALSE,
+TEXT,61.27659574,141,136,1,2,2,FALSE,3.4046932,PyMuPDF,FALSE,FALSE,136 of 141 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,69.63235294,340,331,2,7,0,FALSE,7.5257305,PyMuPDF,FALSE,FALSE,331 of 340 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,69.73782772,267,261,2,4,0,FALSE,5.7971047,PyMuPDF,FALSE,FALSE,261 of 267 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,61.18181818,275,256,2,17,0,FALSE,3.1414806,PyMuPDF,FALSE,FALSE,256 of 275 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+MIXED,65.79096045,177,159,1,17,0,TRUE,8.2325568,PyMuPDF,FALSE,FALSE,159 of 177 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0431557,,FALSE,FALSE,
+MIXED,63.71794872,273,218,5,50,0,TRUE,4.0399737,PyMuPDF,FALSE,FALSE,218 of 273 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+TEXT,62.00892857,336,315,5,16,0,FALSE,4.4930602,PyMuPDF,FALSE,FALSE,315 of 336 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,69.77031802,283,274,2,7,0,FALSE,21.5862778,PyMuPDF,FALSE,FALSE,274 of 283 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0652069,,FALSE,FALSE,
+TEXT,63.72302158,278,257,3,18,0,FALSE,19.9910723,PyMuPDF,FALSE,FALSE,257 of 278 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0522932,,FALSE,FALSE,
+MIXED,63.19767442,86,71,2,12,1,TRUE,4.7879241,PyMuPDF,FALSE,FALSE,71 of 86 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+TEXT,57.67010309,485,456,9,20,0,FALSE,12.3866145,PyMuPDF,FALSE,FALSE,456 of 485 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,60.22563177,554,527,9,17,1,FALSE,8.6761495,PyMuPDF,FALSE,FALSE,527 of 554 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0422386,,FALSE,FALSE,
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0551838,,FALSE,FALSE,
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0376019,,FALSE,FALSE,
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0851921,,FALSE,FALSE,
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0348199,,FALSE,FALSE,
+TEXT,68.43091335,427,417,10,0,0,FALSE,7.8684274,PyMuPDF,FALSE,FALSE,417 of 427 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,56.66276347,427,401,12,12,2,FALSE,8.9721802,PyMuPDF,FALSE,FALSE,401 of 427 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,57.42268041,485,449,5,31,0,FALSE,5.020462,PyMuPDF,FALSE,FALSE,449 of 485 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,66.46067416,178,175,1,2,0,FALSE,4.1745637,PyMuPDF,FALSE,FALSE,175 of 178 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0219821,,FALSE,FALSE,
+TEXT,67.00775194,645,632,9,3,1,FALSE,25.4122872,PyMuPDF,FALSE,FALSE,632 of 645 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,64.94974874,199,194,0,4,1,FALSE,8.8434614,PyMuPDF,FALSE,FALSE,194 of 199 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,61.72289157,415,395,1,10,9,FALSE,13.4630367,PyMuPDF,FALSE,FALSE,395 of 415 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,59.35483871,279,270,6,3,0,FALSE,5.1273477,PyMuPDF,FALSE,FALSE,270 of 279 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,69.39306358,346,336,1,9,0,FALSE,4.6938135,PyMuPDF,FALSE,FALSE,336 of 346 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,59.94413408,358,339,10,8,1,FALSE,5.5350902,PyMuPDF,FALSE,FALSE,339 of 358 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+TEXT,61.59388646,458,445,2,11,0,FALSE,12.7721864,PyMuPDF,FALSE,FALSE,445 of 458 pages contain a text layer. OCR is not required. Use direct text and table extraction.
+UNKNOWN,0,0,0,0,0,0,FALSE,0.0270451,,FALSE,FALSE,
+MIXED,64.5990566,212,186,2,24,0,TRUE,22.2627388,PyMuPDF,FALSE,FALSE,186 of 212 pages contain a reliable text layer. Most content can be extracted directly. Use PyMuPDF for extraction.
+TEXT,59.07407407,243,241,1,1,0,FALSE,2.4071655,PyMuPDF,FALSE,FALSE,241 of 243 pages contain a text layer. OCR is not required. Use direct text and table extraction.

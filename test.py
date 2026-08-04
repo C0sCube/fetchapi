@@ -1,44 +1,115 @@
-def page_text_or_scanned(page):
+import re
+import fitz
 
-    text = page.get_text("text").strip()
-    page_rect = page.rect
-    page_area = page_rect.width * page_rect.height
+NUM_RE = re.compile(r"\(?\d[\d,]*\.?\d*%?\)?")  # 1.23, 1,234.45, (123) etc etc
+ALPHA_RE = re.compile(r"[A-Za-z]+")  # pure words
 
-    if page_area <= 0:
-        return "scanned"
+# def detect_spread(page, threshold=1.8):
+#     rect = page.rect
+#     aspect_ratio = rect.width / rect.height
 
-    image_area = 0
-    for img in page.get_images(full=True):
-        try:
-            xref = img[0]
-            for rect in page.get_image_rects(xref):
-                clipped = rect & page_rect
-                if clipped.is_empty:
-                    continue
+#     return {
+#         "aspect_ratio": round(aspect_ratio, 3),
+#         "is_spread": aspect_ratio > threshold,
+#         "page_width":rect.width,
+#         "page_height":rect.height
+#     }
 
-                rect_area = clipped.width * clipped.height
-                # Ignore small logos/icons
-                if rect_area > page_area * 0.05:
-                    image_area += rect_area
 
-        except Exception:
-            continue
+def detect_spread(page, ref_width, ref_height):
 
-    image_coverage = min(image_area / page_area, 1.0)
-    blocks = page.get_text("blocks")
-    text_blocks = [
-        block for block in blocks if len(block) >= 5 and str(block[4]).strip()
-    ]
+    width = page.rect.width
+    height = page.rect.height
+    w_ratio = width / ref_width
+    h_ratio = height / ref_height
 
-    num_text_blocks = len(text_blocks)
+    is_spread = w_ratio > 1.6 and h_ratio > 0.7
 
-    # Strong text page
-    if len(text) > 100 and num_text_blocks >= 3 and image_coverage < 0.8:
-        return "text"
-    # Strong scanned page
-    if image_coverage > 0.8 and len(text) < 100:
-        return "scanned"
-    # OCR scanned page
-    if image_coverage > 0.9 and num_text_blocks <= 2:
-        return "scanned"
-    return "text" if len(text) > 100 else "scanned"
+    return {
+        "width": width,
+        "height": height,
+        "width_ratio": w_ratio,
+        "height_ratio": h_ratio,
+        "area_ratio": (width * height) / (ref_width * ref_height),
+        "spread": is_spread,
+    }
+
+
+def tabular_distribution(page, rect):
+
+    y0 = rect.y0 + rect.height * 0.20
+    y1 = rect.y1 - rect.height * 0.20
+
+    split_x = rect.x0 + rect.width * 0.60
+
+    left_rect = fitz.Rect(rect.x0, y0, split_x, y1)
+    right_rect = fitz.Rect(split_x, y0, rect.x1, y1)
+
+    left_text = page.get_text("text", clip=left_rect)
+    right_text = page.get_text("text", clip=right_rect)
+
+    return {
+        "alpha_left": len(ALPHA_RE.findall(left_text)),
+        "alpha_right": len(ALPHA_RE.findall(right_text)),
+        "num_left": len(NUM_RE.findall(left_text)),
+        "num_right": len(NUM_RE.findall(right_text)),
+    }
+
+
+input_folder = r"C:\Users\kaustubh.keny\Downloads\FINANCE\FULL"
+all_content = []
+for pdf_file in sorted(Path(input_folder).glob("*.pdf")):
+
+    try:
+        doc = fitz.open(pdf_file)
+        total_pages = doc.page_count
+
+        page_0 = doc[0]
+        ref_height = page_0.rect.height
+        ref_width = page_0.rect.width
+        for i in range(0, total_pages):
+            page = doc[isinstance]
+            spread_info = detect_spread(page, ref_width, ref_height)
+
+            if not spread_info["is_spread"]:
+                result = {"pdf_name": pdf_file.stem, "page": i + 1, "segment": "FULL"}
+
+                result.update(spread_info)
+                result.update(tabular_distribution(page, page.rect))
+
+                all_content.append(result)
+
+            else:
+
+                rect = page.rect
+                mid_x = rect.x0 + rect.width / 2
+
+                left_page = fitz.Rect(rect.x0, rect.y0, mid_x, rect.y1)
+                right_page = fitz.Rect(mid_x, rect.y0, rect.x1, rect.y1)
+                left_result = {
+                    "pdf_name": pdf_file.stem,
+                    "page": i + 1,
+                    "segment": "LEFT_PAGE",
+                }
+
+                left_result.update(spread_info)
+                left_result.update(tabular_distribution(page, left_page))
+                all_content.append(left_result)
+
+                right_result = {
+                    "pdf_name": pdf_file.stem,
+                    "page": i + 1,
+                    "segment": "RIGHT_PAGE",
+                }
+
+                right_result.update(spread_info)
+                right_result.update(tabular_distribution(page, right_page))
+                all_content.append(right_result)
+
+        doc.close()
+
+    except Exception as e:
+        print(f"Error: {pdf_file.name} -> {e}")
+
+df = pd.DataFrame(all_content)
+df.to_csv("NUMERIC_RATIO.csv")
