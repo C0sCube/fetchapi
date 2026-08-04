@@ -1,0 +1,13 @@
+{
+    "uid": "",
+    "root": "",
+    "fetch_verify": false,
+    "fetch_timeout": 20,
+    "params": {
+        "p1": {
+            "type": "",
+            "values": []
+        }
+    },
+    "endpoint_type": "json"
+}
