@@ -1,115 +1,93 @@
-import re
-import fitz
+def page_content_metadata_v1(page, layout, region=None):
 
-NUM_RE = re.compile(r"\(?\d[\d,]*\.?\d*%?\)?")  # 1.23, 1,234.45, (123) etc etc
-ALPHA_RE = re.compile(r"[A-Za-z]+")  # pure words
+    w = layout["width"]
+    h = layout["height"]
 
-# def detect_spread(page, threshold=1.8):
-#     rect = page.rect
-#     aspect_ratio = rect.width / rect.height
+    if region is None:
+        region = {"x0": 0, "y0": 0, "x1": w, "y1": h}
 
-#     return {
-#         "aspect_ratio": round(aspect_ratio, 3),
-#         "is_spread": aspect_ratio > threshold,
-#         "page_width":rect.width,
-#         "page_height":rect.height
-#     }
+    margin_x = (region["x1"] - region["x0"]) * 0.05
+    margin_y = (region["y1"] - region["y0"]) * 0.15
+
+    left = region["x0"] + margin_x
+    right = region["x1"] - margin_x
+    top = region["y0"] + margin_y
+    bottom = region["y1"] - margin_y
+
+    numeric_lines = []
+    segment_lines = []
+
+    dirs = Counter()
+
+    # char_count = 0
+    line_count = 0
+    block_count = 0
+
+    blocks = page.get_text("dict")["blocks"]
+
+    for block in blocks:
+
+        if block["type"] != 0:
+            continue
+        
+        block_count += 1
+        
+        for line in block["lines"]:
+
+            x0, y0, x1, y1 = line["bbox"]
+
+            # region restriction
+            if x1 < left or x0 > right or y1 < top or y0 > bottom:
+                continue
+            
+            line_count += 1
+            spans = line["spans"]
+            dirs[tuple(map(round, line["dir"]))] += 1
+            text = "".join(span["text"] for span in spans).strip()
+
+            if not text:
+                continue
 
 
-def detect_spread(page, ref_width, ref_height):
+            # char_count += len(text)
+            
+            if NUM_LINE_RE.match(text):
+                numeric_lines.append(
+                    {
+                        "text": text,
+                        "bbox": (x0, y0, x1, y1),
+                        # IMPORTANT
+                        "cx": (x0 + x1) / 2,
+                    }
+                )
 
-    width = page.rect.width
-    height = page.rect.height
-    w_ratio = width / ref_width
-    h_ratio = height / ref_height
+            matches = SECTION_RE.findall(text)
 
-    is_spread = w_ratio > 1.6 and h_ratio > 0.7
+            if matches:
+                segment_lines.extend(matches)
+
+    if dirs:
+
+        dominant = dirs.most_common(1)[0][0]
+
+        text_dir = {
+            (1, 0): "n",
+            (0, -1): "90_cc",
+            (0, 1): "90_c",
+            (-1, 0): "ud",
+        }.get(dominant, "n")
+
+    else:
+        text_dir = None
 
     return {
-        "width": width,
-        "height": height,
-        "width_ratio": w_ratio,
-        "height_ratio": h_ratio,
-        "area_ratio": (width * height) / (ref_width * ref_height),
-        "spread": is_spread,
+        **layout,
+        # "char_count": char_count,
+        "line_count": line_count,
+        "block_count": block_count,
+        "t_dir": text_dir,
+        # "numeric_lines": numeric_lines,
+        "numeric_count": len(numeric_lines),
+        # "segment_lines": segment_lines,
+        "segment_count": len(segment_lines),
     }
-
-
-def tabular_distribution(page, rect):
-
-    y0 = rect.y0 + rect.height * 0.20
-    y1 = rect.y1 - rect.height * 0.20
-
-    split_x = rect.x0 + rect.width * 0.60
-
-    left_rect = fitz.Rect(rect.x0, y0, split_x, y1)
-    right_rect = fitz.Rect(split_x, y0, rect.x1, y1)
-
-    left_text = page.get_text("text", clip=left_rect)
-    right_text = page.get_text("text", clip=right_rect)
-
-    return {
-        "alpha_left": len(ALPHA_RE.findall(left_text)),
-        "alpha_right": len(ALPHA_RE.findall(right_text)),
-        "num_left": len(NUM_RE.findall(left_text)),
-        "num_right": len(NUM_RE.findall(right_text)),
-    }
-
-
-input_folder = r"C:\Users\kaustubh.keny\Downloads\FINANCE\FULL"
-all_content = []
-for pdf_file in sorted(Path(input_folder).glob("*.pdf")):
-
-    try:
-        doc = fitz.open(pdf_file)
-        total_pages = doc.page_count
-
-        page_0 = doc[0]
-        ref_height = page_0.rect.height
-        ref_width = page_0.rect.width
-        for i in range(0, total_pages):
-            page = doc[isinstance]
-            spread_info = detect_spread(page, ref_width, ref_height)
-
-            if not spread_info["is_spread"]:
-                result = {"pdf_name": pdf_file.stem, "page": i + 1, "segment": "FULL"}
-
-                result.update(spread_info)
-                result.update(tabular_distribution(page, page.rect))
-
-                all_content.append(result)
-
-            else:
-
-                rect = page.rect
-                mid_x = rect.x0 + rect.width / 2
-
-                left_page = fitz.Rect(rect.x0, rect.y0, mid_x, rect.y1)
-                right_page = fitz.Rect(mid_x, rect.y0, rect.x1, rect.y1)
-                left_result = {
-                    "pdf_name": pdf_file.stem,
-                    "page": i + 1,
-                    "segment": "LEFT_PAGE",
-                }
-
-                left_result.update(spread_info)
-                left_result.update(tabular_distribution(page, left_page))
-                all_content.append(left_result)
-
-                right_result = {
-                    "pdf_name": pdf_file.stem,
-                    "page": i + 1,
-                    "segment": "RIGHT_PAGE",
-                }
-
-                right_result.update(spread_info)
-                right_result.update(tabular_distribution(page, right_page))
-                all_content.append(right_result)
-
-        doc.close()
-
-    except Exception as e:
-        print(f"Error: {pdf_file.name} -> {e}")
-
-df = pd.DataFrame(all_content)
-df.to_csv("NUMERIC_RATIO.csv")
