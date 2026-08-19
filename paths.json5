@@ -1,0 +1,16 @@
+{
+  path_poppler: "C:/Program Files/poppler-26.02.0/Library/bin",
+  path_tesseract: "C:/Users/kaustubh.keny/Tesseract-OCR/tesseract.exe",
+  path_google_key: "C:/Users/kaustubh.keny/Projects/OFFICE PROJECTS/google_key.json",
+  path_model_llm:"C:/Users/kaustubh.keny/Projects/OFFICE PROJECTS/rep_pdfv2/all-MiniLM-L6-v2",
+  auth_utils: {
+    AUTH_API_URL: "https://172.22.225.177/ldapapi/Ldap/authenticate-user",
+    CREATE_API_URL: "https://172.22.225.177/ldapapi/Ldap/create-user",
+    CHANGE_PASS_API_URL: "https://172.22.225.177/ldapapi/Ldap/change-password",
+    USER_EXIST: "https://172.22.225.177/ldapapi/Ldap/is-user-exist?username=",
+  },
+  "web":{
+    "host":"NCOG-LPT-TCH-32.Cogencis.com",
+    "port":8000
+  }
+}
