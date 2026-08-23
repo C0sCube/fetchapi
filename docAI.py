@@ -384,7 +384,7 @@ class PageWordExtractor:
         return output
 
     def handler(self, page_meta, mode="docai"):
-        
+
         from concurrent.futures import ThreadPoolExecutor
 
         page_resources = {}
@@ -430,7 +430,6 @@ class PageWordExtractor:
 
         return page_resources
 
-
     def pdf_handler(self, pdf_path):
         result = self._document_ai(pdf_path)
         output = {}
@@ -454,7 +453,7 @@ class PageWordExtractor:
             }
 
         return output
-    
+
     def raw_handler(self, pdf_path):
         result = self.document_ai(pdf_path)
         return result
